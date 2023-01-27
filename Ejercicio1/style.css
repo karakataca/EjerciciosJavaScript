@@ -19,6 +19,7 @@ form input[type="submit"] {
     padding: 10px 20px;
     border-radius: 5px;
 }
+
 div {
     width: 60%;
     margin: auto;
@@ -30,3 +31,6 @@ div {
     font-weight: bold;
     color: blue;
 }
+#cabecera {
+    display:flex;
+  }
