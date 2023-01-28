@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Comparar Mayusculas y Minusculas</title>
+  </head>
+  <body>
+    <h1> Comparar Mayúsculas y Minúsculas</h1>
+    <script>
+      var frase = prompt("Introduce una frase:");
+      // Utilizamos el metodo toUpperCase, para poner todo en mayúsculas y poder luego comparar
+      var fraseMay = frase.toUpperCase();
+      // Utilizamos el metodo toUpperCase, para poner todo en mayúsculas y poder luego comparar
+      var fraseMin = frase.toLowerCase();
+      if(frase === fraseMay) {
+        alert("La frase esta escrita en mayúscula")
+      } else if(frase === fraseMin) {
+        alert("La frase esta escrita en minúscula")
+      } else {
+        alert("La frase esta escrita en ambas mayúscula y minúscula");
+      }
+    </script>
+  </body>
+</html>

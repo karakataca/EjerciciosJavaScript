@@ -1,0 +1,33 @@
+h1{
+    text-align: center;
+    color:blue;
+}
+form {
+    width: 60%;
+    margin: auto;
+    background-color: #cccccc;
+    padding: 20px;
+    border: 1px solid #333333;
+}
+form label {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+form input[type="submit"] {
+    background-color: blue;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+div {
+    width: 60%;
+    margin: auto;
+    background-color: #44aebc;
+    padding: 20px;
+    border: 1px solid #333333;
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: blue;
+}
