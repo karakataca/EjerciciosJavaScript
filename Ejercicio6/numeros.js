@@ -1,27 +1,20 @@
-function obtenerNumerosYSuma(arr) {
-    //Filtrar sólo los elementos que son números
-    var numeros = arr.filter(function(elemento) {
-        return typeof elemento === "number";
-    });
+const notas = [6, 7, 2, 9, 3, 4, 5, 8, 2];
+let sumaforof = 0;
 
-    //Calcular la suma de los números
-    var suma = numeros.reduce(function(acumulador, numero) {
-        return acumulador + numero;
-    }, 0);
-
-    //Devolver el nuevo array y la suma
-    return {numeros: numeros, suma: suma};
+for (let nota of notas) {
+    sumaforof += nota;
 }
 
-//Pedir el array mediante un prompt
-var arrString = prompt("Ingrese una lista de números o valores separados por comas:");
+console.log("Suma for of "+sumaforof); 
 
-//Convertir la cadena de texto en un array
-var arr = arrString.split(",").map(function(valor) {
-    return parseFloat(valor);
-});
+let sumafor = 0;
 
-//Procesar el array y obtener la lista de números y su suma
-var resultado = obtenerNumerosYSuma(arr);
-console.log(resultado);
+for (let i = 0; i < notas.length; i++) {
+    sumafor += notas[i];
+}
+console.log("Suma for " + sumafor); 
+
+document.getElementById("Numeros").innerHTML = "Los numeros son "+ notas;
+document.getElementById("Sumafor").innerHTML = ""+ sumafor;
+document.getElementById("Sumaforof").innerHTML = " " + sumaforof;
 

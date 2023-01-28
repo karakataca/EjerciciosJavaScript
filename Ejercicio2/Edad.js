@@ -23,7 +23,7 @@ function calcularEdad() {
   }
   document.getElementById("Tucumple").innerHTML = "Tu cumpleaños es el"+birthdate;
   document.getElementById("Tuedad").innerHTML = "Tienes " + age + " años.";
-}
+}          
 
 
 
