@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Usuarios Premium</title>
+    </head>
+    <body>
+        <h2> Usuarios Premium</h2>
+        <div id="premium-users"></div>
+        <script>
+            const users = [
+                {username:'ppc90', age:30, premium:false},
+                {username:'lu65', age:24, premium:false},
+                {username:'maria3', age:36, premium:false},
+                {username:'abc123', age:20, premium:true},
+                {username:'sergio58', age:26, premium:true},
+            ];
+            function getPremiumUsers() {
+                let premiumUsers = [];
+                for (let i = 0; i < users.length; i++) {
+                    if (users[i].premium === true) {
+                        premiumUsers.push(users[i]);
+                    }
+                }
+                let premiumUserDiv = document.getElementById("premium-users");
+                // recorremos el nuevo array y escribimos por cada uno el username y la edad en la página
+                for(let i=0;i<premiumUsers.length;i++){
+                    premiumUserDiv.innerHTML += `<p>${premiumUsers[i].username} ${premiumUsers[i].age}</p> `
+                }
+            }
+            function getNoPremiumUsers() {
+                let noPremiumUsers = [];
+                for (let i = 0; i < users.length; i++) {
+                    if (users[i].premium === false) {
+                        noPremiumUsers.push(users[i]);
+                    }
+                }
+              // Escribimos por consola el nuevo array por confirmar que ha ido correctamente               
+              console.log(noPremiumUsers);
+            }
+
+            window.onload = function() {
+                getPremiumUsers();
+                getNoPremiumUsers();
+            }
+        </script>
+    </body>
+</html>

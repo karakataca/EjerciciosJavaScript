@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Concatenar funciones</title>
+</head>
+
+<body>
+  <h1> Concatenar funciones</h1>
+  <script>
+    const meses = ["enero", "febrero", "marzo", "abril", "mayo", "junio", "julio", "agosto", "septiembre", "octubre", "noviembre", "diciembre"];
+
+    // Utilizamos el metodo filter para filtrar todo los meses con más de letras
+    // Concatenamos con map, para cambiar estos meses a Mayúsculas
+    const mesesMayusculas = meses.filter(mes => mes.length > 7).map(mes => mes.toUpperCase());
+
+    console.log("Meses con más de 7 letras: ", mesesMayusculas);
+    console.log("Hay "+ mesesMayusculas.length +" meses con más de 7 letras")
+
+  </script>
+</body>
+
+</html>
